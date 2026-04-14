@@ -7,22 +7,14 @@ import TeamCard from '@/components/team-card'
 const teams = [
   {
     id: 1,
-    name: 'ZABLON FC',
-    shortCode: 'ZABLON FC',
-    players: ['YABBIRA (C)', 'GUDEtA A.', 'EYU A.', 'BEREKET K.', 'MISGANA T.', 'YORDANOS A.', 'HÄKIME'],
-    badge: 'ELITE DIVISION',
-    badgeIcon: '◯'
+    name: 'ANOINTED FC',
+    shortCode: 'ANOINTED FC',
+    players: ['SURAFEL T. (C)', 'YONATAN W.', 'KIRUBEL D.', 'FENAN Y.', 'TARIKU T.', 'TIKIKOS A.', 'KENASA'],
+    badge: 'CHAMPIONSHIP MENTALITY',
+    badgeIcon: '✧'
   },
   {
     id: 2,
-    name: 'MEHANAYM FC',
-    shortCode: 'MEHANAYM FC',
-    players: ['MINTERINOT (C)', 'ROBSEN', 'NATAN MULETA', 'NAOL FIKADU', 'YOMIYOU G.', 'CHALA R.', 'BINYAM'],
-    badge: 'PRESTIGE BOOSTER',
-    badgeIcon: '◎'
-  },
-  {
-    id: 3,
     name: 'BELIEVERS FC',
     shortCode: 'BELIEVERS FC',
     players: ['YONAS (C)', 'BIRUK S.', 'ENDALKACHEW G.', 'MELAL F.', 'NAHUNDA B.', 'ALAZAR A.', 'GEDION'],
@@ -30,15 +22,7 @@ const teams = [
     badgeIcon: '⚡'
   },
   {
-    id: 4,
-    name: 'REHOBOTH FC',
-    shortCode: 'REHOBOTH FC',
-    players: ['AMANUEL K. (C)', 'NATHANEL W.', 'KIRUBEL K.', 'NATNAEL D.', 'HENOK H.', 'DAWIT D.', 'YAKOB'],
-    badge: 'DEFENSE POWER',
-    badgeIcon: '⊞'
-  },
-  {
-    id: 5,
+    id: 3,
     name: 'FARES FC',
     shortCode: 'FARES FC',
     players: ['TEDELA A. (C)', 'MOGES T.', 'SHELELE N.', 'ALAZAR', 'BIRUK', 'YISHAK M.', 'SAMUEL T.'],
@@ -46,15 +30,7 @@ const teams = [
     badgeIcon: '◀'
   },
   {
-    id: 6,
-    name: 'KABOD FC',
-    shortCode: 'KABOD FC',
-    players: ['TINSAE (C)', 'ASHENAFI', 'BEREKET S.', 'ISRAEL', 'GABRIEL', 'DUBA', 'SAMSON'],
-    badge: 'FUTURE LEGENDS',
-    badgeIcon: '☆'
-  },
-  {
-    id: 7,
+    id: 4,
     name: 'HALLELUJAH FC',
     shortCode: 'HALLELUJAH FC',
     players: ['DANIEL L. (C)', 'KENASA T.', 'BINYAM M.', 'DAWIT A.', 'SOLOMON D.', 'ERMIYAS W.', 'TEDELA'],
@@ -62,12 +38,36 @@ const teams = [
     badgeIcon: '✦'
   },
   {
+    id: 5,
+    name: 'KABOD FC',
+    shortCode: 'KABOD FC',
+    players: ['TINSAE (C)', 'ASHENAFI', 'BEREKET S.', 'ISRAEL', 'GABRIEL', 'DUBA', 'SAMSON'],
+    badge: 'FUTURE LEGENDS',
+    badgeIcon: '☆'
+  },
+  {
+    id: 6,
+    name: 'MEHANAYM FC',
+    shortCode: 'MEHANAYM FC',
+    players: ['MINTESINOT (C)', 'ROBSEN', 'NATAN MULETA', 'NAOL FIKADU', 'YOMIYOU G.', 'CHALA R.', 'BINYAM'],
+    badge: 'PRESTIGE BOOSTER',
+    badgeIcon: '◎'
+  },
+  {
+    id: 7,
+    name: 'REHOBOTH FC',
+    shortCode: 'REHOBOTH FC',
+    players: ['AMANUEL K. (C)', 'NATHANEL W.', 'KIRUBEL K.', 'NATNAEL D.', 'HENOK H.', 'DAWIT D.', 'YAKOB'],
+    badge: 'DEFENSE POWER',
+    badgeIcon: '⊞'
+  },
+  {
     id: 8,
-    name: 'ANOINTED FC',
-    shortCode: 'ANOINTED FC',
-    players: ['SURAFEL T. (C)', 'YONATAN W.', 'KIRUBEL D.', 'FENAN Y.', 'TARIKU T.', 'TIKIKOS A.', 'KENASA'],
-    badge: 'CHAMPIONSHIP MENTALITY',
-    badgeIcon: '✧'
+    name: 'ZABLON FC',
+    shortCode: 'ZABLON FC',
+    players: ['YABSIRA (C)', 'GUDETA A.', 'EYU A.', 'BEREKET K.', 'MISGANA T.', 'YORDANOS A.', 'HÄKIME'],
+    badge: 'ELITE DIVISION',
+    badgeIcon: '◯'
   }
 ]
 
