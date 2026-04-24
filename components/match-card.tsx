@@ -9,14 +9,15 @@ interface MatchCardProps {
     matchNumber: number
     team1: string
     team2: string
-    // Added score fields (optional for upcoming matches)
-    score1?: number | string 
+    score1?: number | string
     score2?: number | string
+    scorers1?: string[]
+    scorers2?: string[]
     date: string
     time: string
     location: string
     isLive: boolean
-    status: string // 'FINISHED', 'LIVE SOON', 'SCHEDULED'
+    status: string
   }
 }
 
@@ -25,35 +26,48 @@ export default function MatchCard({ match }: MatchCardProps) {
 
   return (
     <div className={`bg-card border border-border rounded-lg p-6 hover:border-accent/50 transition-colors ${isFinished ? 'opacity-90' : ''}`}>
+      
+      {/* Header */}
       <div className="flex items-start justify-between mb-4">
         <div>
           <p className="text-xs text-muted-foreground uppercase tracking-wider font-semibold mb-1">
             MATCH {String(match.matchNumber).padStart(2, '0')}
           </p>
         </div>
-        
-        {/* Status Badge */}
+
         {match.isLive ? (
           <Badge className="bg-accent text-background hover:bg-accent/90">
             <span className="w-2 h-2 bg-background rounded-full mr-2 animate-pulse"></span>
             LIVE {match.status}
           </Badge>
         ) : (
-          <Badge variant="outline" className={`${isFinished ? 'border-muted-foreground text-muted-foreground' : 'border-accent text-accent'}`}>
+          <Badge
+            variant="outline"
+            className={`${isFinished ? 'border-muted-foreground text-muted-foreground' : 'border-accent text-accent'}`}
+          >
             {match.status}
           </Badge>
         )}
       </div>
 
-      {/* Teams & Score Section */}
-      <div className="flex items-center gap-4 mb-6">
+      {/* Teams & Score */}
+      <div className="flex items-start gap-4 mb-6">
+        
         {/* Team 1 */}
         <div className="flex-1 text-center">
           <Shield className="w-8 h-8 mx-auto mb-2 text-primary" />
-          <p className="text-lg font-bold text-white leading-tight">{match.team1}</p>
+          <p className="text-lg font-bold text-white">{match.team1}</p>
+
+          {isFinished && match.scorers1 && (
+            <div className="mt-2 text-xs text-muted-foreground space-y-1">
+              {match.scorers1.map((s, i) => (
+                <p key={i}>⚽ {s}</p>
+              ))}
+            </div>
+          )}
         </div>
 
-        {/* Center: VS or Score */}
+        {/* Score */}
         <div className="flex flex-col items-center justify-center min-w-[80px]">
           {isFinished ? (
             <div className="flex items-center gap-2">
@@ -69,7 +83,15 @@ export default function MatchCard({ match }: MatchCardProps) {
         {/* Team 2 */}
         <div className="flex-1 text-center">
           <Target className="w-8 h-8 mx-auto mb-2 text-primary" />
-          <p className="text-lg font-bold text-white leading-tight">{match.team2}</p>
+          <p className="text-lg font-bold text-white">{match.team2}</p>
+
+          {isFinished && match.scorers2 && (
+            <div className="mt-2 text-xs text-muted-foreground space-y-1">
+              {match.scorers2.map((s, i) => (
+                <p key={i}>⚽ {s}</p>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 
@@ -81,12 +103,14 @@ export default function MatchCard({ match }: MatchCardProps) {
           </p>
           <p className="text-sm font-medium text-foreground">{match.date}</p>
         </div>
+
         <div>
           <p className="text-xs text-muted-foreground uppercase tracking-wider font-semibold mb-1">
             Time
           </p>
           <p className="text-sm font-medium text-foreground">{match.time}</p>
         </div>
+
         <div>
           <p className="text-xs text-muted-foreground uppercase tracking-wider font-semibold mb-1">
             Venue
