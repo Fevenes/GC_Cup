@@ -6,13 +6,16 @@ import MatchCard from '@/components/match-card'
 import { Calendar, Clock, MapPin } from 'lucide-react'
 
 const matches = [
-  // COMPLETED MATCHES (Based on your results)
+  // COMPLETED MATCHES
   {
     id: 1,
     matchNumber: 1,
     team1: 'REHOBOTH FC',
     team2: 'FARES FC',
-    score: '6 : 4',
+    score1: 6,
+    score2: 4,
+    scorers1: ['Yakob x3', 'Hena x2', 'Kira'],
+    scorers2: ['Biruk x3', 'Shelele'],
     date: 'COMPLETED',
     time: 'N/A',
     location: 'FUTSAL',
@@ -24,7 +27,10 @@ const matches = [
     matchNumber: 2,
     team1: 'ZABLON FC',
     team2: 'MEHANAYM FC',
-    score: '4 : 2',
+    score1: 4,
+    score2: 2,
+    scorers1: ['Misege x3', 'Natan'],
+    scorers2: ['Gude', 'Nati'],
     date: 'COMPLETED',
     time: 'N/A',
     location: 'FUTSAL',
@@ -36,7 +42,10 @@ const matches = [
     matchNumber: 3,
     team1: 'BELIEVERS FC',
     team2: 'ANOINTED FC',
-    score: '5 : 0',
+    score1: 5,
+    score2: 0,
+    scorers1: [],
+    scorers2: [],
     date: 'COMPLETED',
     time: 'N/A',
     location: 'FUTSAL',
@@ -48,14 +57,18 @@ const matches = [
     matchNumber: 4,
     team1: 'KABOD FC',
     team2: 'HALLELUJAH FC',
-    score: '6 : 3',
+    score1: 6,
+    score2: 3,
+    scorers1: [],
+    scorers2: [],
     date: 'COMPLETED',
     time: 'N/A',
     location: 'FUTSAL',
     isLive: false,
     status: 'FINISHED'
   },
-  // UPCOMING MATCHES (Based on the screenshots)
+
+  // UPCOMING MATCHES
   {
     id: 5,
     matchNumber: 1,
@@ -100,7 +113,7 @@ const matches = [
     isLive: false,
     status: 'SCHEDULED'
   }
-];
+]
 
 export default function FixturesPage() {
   return (
