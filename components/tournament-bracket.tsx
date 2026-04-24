@@ -10,11 +10,11 @@ interface Match {
 }
 
 const quarterFinals: Match[] = [
-  { team1: 'Zablon FC', team2: 'Mehanaym FC', score1: 0, score2: 0 },
+  { team1: 'Zablon FC', team2: 'Mehanaym FC', score1: 4, score2: 2 },
   { team1: 'Believers FC', team2: 'Rehoboth FC', score1: 0, score2: 0 },
-  { team1: 'Rehoboth FC', team2: 'Fares FC', score1: 0, score2: 0 },
-  { team1: 'Kabod FC', team2: 'Hallelujah FC', score1: 0, score2: 0 },
-  { team1: 'Believers FC', team2: 'Anointed FC', score1: 0, score2: 0 },
+  { team1: 'Rehoboth FC', team2: 'Fares FC', score1: 6, score2: 4 },
+  { team1: 'Kabod FC', team2: 'Hallelujah FC', score1: 6, score2: 3 },
+  { team1: 'Believers FC', team2: 'Anointed FC', score1: 5, score2: 0 },
   { team1: 'Kabod FC', team2: 'Anointed FC', score1: 0, score2: 0 },
   { team1: 'Mehanaym FC', team2: 'Fares FC', score1: 0, score2: 0 },
   { team1: 'Zablon FC', team2: 'Hallelujah FC', score1: 0, score2: 0 },
