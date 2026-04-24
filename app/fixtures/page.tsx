@@ -6,73 +6,101 @@ import MatchCard from '@/components/match-card'
 import { Calendar, Clock, MapPin } from 'lucide-react'
 
 const matches = [
+  // COMPLETED MATCHES (Based on your results)
   {
     id: 1,
     matchNumber: 1,
-    team1: 'KABOD FC',
-    team2: 'HALLELUJAH FC',
-    date: 'APR 26, 2025',
-    time: '12:00 LT',
+    team1: 'REHOBOTH FC',
+    team2: 'FARES FC',
+    score: '6 : 4',
+    date: 'COMPLETED',
+    time: 'N/A',
     location: 'FUTSAL',
-    isLive: true,
-    status: 'LIVE'
+    isLive: false,
+    status: 'FINISHED'
   },
   {
     id: 2,
     matchNumber: 2,
-    team1: 'BELIEVERS FC',
-    team2: 'FARES FC',
-    date: 'APR 27, 2025',
-    time: '14:30 LT',
+    team1: 'ZABLON FC',
+    team2: 'MEHANAYM FC',
+    score: '4 : 2',
+    date: 'COMPLETED',
+    time: 'N/A',
     location: 'FUTSAL',
     isLive: false,
-    status: 'UPCOMING'
+    status: 'FINISHED'
   },
   {
     id: 3,
     matchNumber: 3,
-    team1: 'ZABLON FC',
-    team2: 'REHOBOTH FC',
-    date: 'APR 28, 2025',
-    time: '16:00 LT',
+    team1: 'BELIEVERS FC',
+    team2: 'ANOINTED FC',
+    score: '5 : 0',
+    date: 'COMPLETED',
+    time: 'N/A',
     location: 'FUTSAL',
     isLive: false,
-    status: 'UPCOMING'
+    status: 'FINISHED'
   },
   {
     id: 4,
     matchNumber: 4,
-    team1: 'MEHANAYM FC',
-    team2: 'ANOINTED FC',
-    date: 'APR 29, 2025',
-    time: '18:00 LT',
+    team1: 'KABOD FC',
+    team2: 'HALLELUJAH FC',
+    score: '6 : 3',
+    date: 'COMPLETED',
+    time: 'N/A',
     location: 'FUTSAL',
     isLive: false,
-    status: 'UPCOMING'
+    status: 'FINISHED'
   },
+  // UPCOMING MATCHES (Based on the screenshots)
   {
     id: 5,
-    matchNumber: 5,
-    team1: 'BELIEVERS FC',
-    team2: 'KABOD FC',
-    date: 'MAY 3, 2025',
-    time: '12:00 LT',
+    matchNumber: 1,
+    team1: 'KABOD FC',
+    team2: 'ANOINTED FC',
+    date: 'APR 26, 2026',
+    time: '12:00 LT MORNING',
     location: 'FUTSAL',
     isLive: false,
-    status: 'UPCOMING'
+    status: 'LIVE SOON'
   },
   {
     id: 6,
-    matchNumber: 6,
-    team1: 'HALLELUJAH FC',
-    team2: 'ZABLON FC',
-    date: 'MAY 4, 2025',
-    time: '14:00 LT',
+    matchNumber: 2,
+    team1: 'BELIEVERS FC',
+    team2: 'REHOBOTH FC',
+    date: 'APR 26, 2026',
+    time: '10:00 LT AFTERNOON',
     location: 'FUTSAL',
     isLive: false,
-    status: 'UPCOMING'
+    status: 'SCHEDULED'
+  },
+  {
+    id: 7,
+    matchNumber: 1,
+    team1: 'MEHANAYM FC',
+    team2: 'FARES FC',
+    date: 'APR 27, 2026',
+    time: '12:00 LT MORNING',
+    location: 'FUTSAL',
+    isLive: false,
+    status: 'LIVE SOON'
+  },
+  {
+    id: 8,
+    matchNumber: 2,
+    team1: 'ZABLON FC',
+    team2: 'HALLELUJAH FC',
+    date: 'APR 27, 2026',
+    time: '10:00 LT AFTERNOON',
+    location: 'FUTSAL',
+    isLive: false,
+    status: 'SCHEDULED'
   }
-]
+];
 
 export default function FixturesPage() {
   return (
