@@ -74,8 +74,8 @@ const matches = [
     matchNumber: 1,
     team1: 'KABOD FC',
     team2: 'ANOINTED FC',
-    date: 'APR 26, 2026',
-    time: '12:00 LT MORNING',
+    date: 'N/A',
+    time: 'N/A',
     location: 'FUTSAL',
     isLive: false,
     status: 'LIVE SOON'
@@ -85,8 +85,8 @@ const matches = [
     matchNumber: 2,
     team1: 'BELIEVERS FC',
     team2: 'REHOBOTH FC',
-    date: 'APR 26, 2026',
-    time: '10:00 LT AFTERNOON',
+    date: 'N/A',
+    time: 'N/A',
     location: 'FUTSAL',
     isLive: false,
     status: 'SCHEDULED'
@@ -96,8 +96,8 @@ const matches = [
     matchNumber: 1,
     team1: 'MEHANAYM FC',
     team2: 'FARES FC',
-    date: 'APR 27, 2026',
-    time: '12:00 LT MORNING',
+    date: 'N/A',
+    time: 'N/A',
     location: 'FUTSAL',
     isLive: false,
     status: 'LIVE SOON'
@@ -107,8 +107,8 @@ const matches = [
     matchNumber: 2,
     team1: 'ZABLON FC',
     team2: 'HALLELUJAH FC',
-    date: 'APR 27, 2026',
-    time: '10:00 LT AFTERNOON',
+    date: 'N/A',
+    time: 'N/A',
     location: 'FUTSAL',
     isLive: false,
     status: 'SCHEDULED'
