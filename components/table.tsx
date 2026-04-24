@@ -10,14 +10,14 @@ interface Team {
 }
 
 const teams: Team[] = [
-  { name: 'Anointed FC', played: 0, wins: 0, draws: 0, losses: 0, points: 0 },
-  { name: 'Believers FC', played: 0, wins: 0, draws: 0, losses: 0, points: 0 },
-  { name: 'Fares FC', played: 0, wins: 0, draws: 0, losses: 0, points: 0 },
-  { name: 'Hallelujah FC', played: 0, wins: 0, draws: 0, losses: 0, points: 0 },
-  { name: 'Kabod FC', played: 0, wins: 0, draws: 0, losses: 0, points: 0 },
-  { name: 'Mehanaym FC', played: 0, wins: 0, draws: 0, losses: 0, points: 0 },
-  { name: 'Rehoboth FC', played: 0, wins: 0, draws: 0, losses: 0, points: 0 },
-  { name: 'Zablon FC', played: 0, wins: 0, draws: 0, losses: 0, points: 0 },
+  { name: 'Anointed FC', played: 1, wins: 0, draws: 0, losses: 1, points: 0 },
+  { name: 'Believers FC', played: 1, wins: 1, draws: 0, losses: 0, points: 3 },
+  { name: 'Fares FC', played: 1, wins: 0, draws: 0, losses: 1, points: 0 },
+  { name: 'Hallelujah FC', played: 1, wins: 0, draws: 0, losses: 1, points: 0 },
+  { name: 'Kabod FC', played: 1, wins: 1, draws: 0, losses: 0, points: 3 },
+  { name: 'Mehanaym FC', played: 1, wins: 0, draws: 0, losses: 1, points: 0 },
+  { name: 'Rehoboth FC', played: 1, wins: 1, draws: 0, losses: 0, points: 3 },
+  { name: 'Zablon FC', played: 1, wins: 1, draws: 0, losses: 0, points: 3 },
 ]
 
 export default function Table() {
